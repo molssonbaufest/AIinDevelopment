@@ -1,4 +1,7 @@
+from pathlib import Path
+
 from fastapi import FastAPI, HTTPException, status
+from fastapi.responses import FileResponse
 from jwt import ExpiredSignatureError, InvalidTokenError
 
 from app.auth import (
@@ -15,6 +18,13 @@ app = FastAPI(
     version="0.1.0",
     description="Web API con autenticacion JWT y refresh token.",
 )
+
+_FRONTEND_INDEX = Path(__file__).resolve().parent / "static" / "index.html"
+
+
+@app.get("/", include_in_schema=False)
+def welcome_page() -> FileResponse:
+    return FileResponse(_FRONTEND_INDEX)
 
 
 @app.get("/health")

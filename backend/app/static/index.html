@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenida | AI in Development</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #0b1220;
+        color: #f4f6fb;
+      }
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+      .subtitle {
+        color: #bac7e3;
+        margin-bottom: 1.5rem;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: #14203a;
+        border: 1px solid #253765;
+        border-radius: 12px;
+        padding: 1rem;
+      }
+      .card h2 {
+        margin-top: 0;
+        font-size: 1.05rem;
+      }
+      .card p {
+        margin: 0.5rem 0 0;
+        color: #d3ddf5;
+      }
+      .card a {
+        color: #7fc8ff;
+      }
+      .sources {
+        margin-top: 1.5rem;
+        font-size: 0.95rem;
+        color: #bac7e3;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Bienvenido a AI in Development</h1>
+      <p class="subtitle">
+        Estas son certificaciones de Microsoft Learn relevantes para 2026 (consultadas con
+        <strong>microsoft_docs_search</strong>) y mostradas en formato de cards.
+      </p>
+
+      <section class="cards" aria-label="Certificaciones Microsoft 2026">
+        <article class="card">
+          <h2>Azure AI Engineer Associate</h2>
+          <p>
+            Certificación enfocada en soluciones de IA en Azure y servicios cognitivos.
+            <a href="https://learn.microsoft.com/credentials/certifications/azure-ai-engineer/" target="_blank" rel="noreferrer">Ver ruta</a>
+          </p>
+        </article>
+        <article class="card">
+          <h2>Azure Data Engineer Associate</h2>
+          <p>
+            Diseño e implementación de soluciones de integración y analítica de datos.
+            <a href="https://learn.microsoft.com/credentials/certifications/azure-data-engineer/" target="_blank" rel="noreferrer">Ver ruta</a>
+          </p>
+        </article>
+        <article class="card">
+          <h2>Azure Data Scientist Associate</h2>
+          <p>
+            Creación, entrenamiento y operación de modelos de machine learning en Azure.
+            <a href="https://learn.microsoft.com/credentials/certifications/azure-data-scientist/" target="_blank" rel="noreferrer">Ver ruta</a>
+          </p>
+        </article>
+        <article class="card">
+          <h2>Azure Security Engineer Associate</h2>
+          <p>
+            Implementación de controles de seguridad e identidad en plataformas Azure.
+            <a href="https://learn.microsoft.com/credentials/certifications/azure-security-engineer/" target="_blank" rel="noreferrer">Ver ruta</a>
+          </p>
+        </article>
+      </section>
+
+      <p class="sources">
+        Referencias: Microsoft Learn Credentials y publicaciones oficiales de certificaciones 2026,
+        como
+        <a href="https://learn.microsoft.com/credentials/certifications/posts/announcing-new-data-and-ai-certifications-from-microsoft" target="_blank" rel="noreferrer">Announcing New Data and AI Certifications from Microsoft</a>.
+      </p>
+    </main>
+  </body>
+</html>
