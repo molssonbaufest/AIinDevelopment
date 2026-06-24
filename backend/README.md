@@ -7,6 +7,7 @@ Aplicacion Web API construida con FastAPI que implementa autenticacion JWT con u
 - Endpoint de autenticacion con credenciales `admin` / `admin123`.
 - Access token JWT con expiracion de 300 segundos.
 - Endpoint para refrescar el token.
+- Frontend de bienvenida en `GET /` con cards de certificaciones Microsoft 2026.
 - Hashing de contrasenas con `passlib[bcrypt]`.
 - Dependencia `bcrypt` fijada a `>=3.2,<4.0` por compatibilidad con `passlib 1.7.x`.
 - Gestion de dependencias con Poetry y `package-mode = false`.
@@ -47,6 +48,10 @@ La API quedara disponible en `http://127.0.0.1:8000`.
 ### `GET /health`
 
 Verifica que la API este operativa.
+
+### `GET /`
+
+Muestra la página de bienvenida del frontend con cards de certificaciones de Microsoft Learn.
 
 ### `POST /auth/token`
 
