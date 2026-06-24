@@ -27,7 +27,7 @@ def welcome_page() -> FileResponse:
     if not _FRONTEND_INDEX.is_file():
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail="La pagina de bienvenida no esta disponible temporalmente",
+            detail="La página de bienvenida no está disponible temporalmente",
         )
     return FileResponse(_FRONTEND_INDEX)
 
