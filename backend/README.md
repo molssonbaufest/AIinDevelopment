@@ -51,7 +51,7 @@ Verifica que la API este operativa.
 
 ### `GET /`
 
-Muestra la pagina de bienvenida del frontend con cards de certificaciones de Microsoft Learn.
+Muestra la página de bienvenida del frontend con cards de certificaciones de Microsoft Learn.
 
 ### `POST /auth/token`
 
